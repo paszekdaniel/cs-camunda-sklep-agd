@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "label": "Czy dostawa powiodła się",
+      "values": [
+        {
+          "label": "Tak",
+          "value": "tak"
+        },
+        {
+          "label": "Nie zastano nikogo w domu",
+          "value": "nie"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_0w27i1f",
+        "columns": null
+      },
+      "id": "Field_0qqg1rg",
+      "key": "radio_dostawa"
+    }
+  ],
+  "type": "default",
+  "id": "Form_dostawa",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

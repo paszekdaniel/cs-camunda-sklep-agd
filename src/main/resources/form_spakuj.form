@@ -1,0 +1,63 @@
+{
+  "components": [
+    {
+      "text": "# Produkt: {{currProduct}} ilość: {{currCount}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_10eohwv",
+        "columns": null
+      },
+      "id": "Field_0l6muso"
+    },
+    {
+      "label": "Status produktu",
+      "values": [
+        {
+          "label": "Spakowano",
+          "value": "1"
+        },
+        {
+          "label": "Nie znaleziono",
+          "value": "0"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_0xkq2cf",
+        "columns": null
+      },
+      "id": "Field_03ij9o7",
+      "key": "radio_produkt"
+    },
+    {
+      "type": "table",
+      "layout": {
+        "row": "Row_0xw4aw4",
+        "columns": null
+      },
+      "label": "Stan",
+      "rowCount": 10,
+      "columns": [
+        {
+          "key": "product",
+          "label": "produkt"
+        },
+        {
+          "key": "count",
+          "label": "Ilość"
+        }
+      ],
+      "id": "Field_0nozddb",
+      "dataSource": "=stanTable"
+    }
+  ],
+  "type": "default",
+  "id": "Form_spakuj",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

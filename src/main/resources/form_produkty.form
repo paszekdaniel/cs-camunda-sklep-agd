@@ -1,0 +1,68 @@
+{
+  "components": [
+    {
+      "label": "Wybierz produkty",
+      "components": [
+        {
+          "label": "Wybierz produkt",
+          "values": [
+            {
+              "label": "Pralka",
+              "value": "pralka"
+            },
+            {
+              "label": "Lodówka",
+              "value": "lodowka"
+            },
+            {
+              "label": "Zmywarka",
+              "value": "zmywarka"
+            },
+            {
+              "label": "Ekspress do kawy",
+              "value": "ekspress"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_1v1xzp5",
+            "columns": null
+          },
+          "id": "Field_01oc26f",
+          "key": "select_product"
+        }
+      ],
+      "showOutline": true,
+      "isRepeating": true,
+      "allowAddRemove": true,
+      "defaultRepetitions": 1,
+      "type": "dynamiclist",
+      "layout": {
+        "row": "Row_0arun4r",
+        "columns": null
+      },
+      "id": "Field_0amrrgf",
+      "path": "dynamiclist_zakup",
+      "properties": {}
+    },
+    {
+      "label": "Button",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1dmqr6m",
+        "columns": null
+      },
+      "id": "Field_03utt13"
+    }
+  ],
+  "type": "default",
+  "id": "Form_produkty",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

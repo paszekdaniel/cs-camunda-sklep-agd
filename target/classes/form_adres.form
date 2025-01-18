@@ -1,0 +1,63 @@
+{
+  "components": [
+    {
+      "label": "Dostawa o domu?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0gmnlv9",
+        "columns": null
+      },
+      "id": "Field_00c3phw",
+      "key": "dostawa_do_domu"
+    },
+    {
+      "label": "Adres",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1m102ga",
+        "columns": null
+      },
+      "id": "Field_114lmlg",
+      "key": "adres",
+      "conditional": {
+        "hide": "=dostawa_do_domu != true"
+      }
+    },
+    {
+      "label": "Wybrany sklep",
+      "values": [
+        {
+          "label": "Sklep Poznań",
+          "value": "Poznan"
+        },
+        {
+          "label": "Sklep Warszawa",
+          "value": "Warszawa"
+        },
+        {
+          "label": "Sklep Kraków",
+          "value": "Krakow"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_1wrhlei",
+        "columns": null
+      },
+      "id": "Field_1exddu7",
+      "key": "wybrany_sklep",
+      "conditional": {
+        "hide": "=dostawa_do_domu = true"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_adres",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

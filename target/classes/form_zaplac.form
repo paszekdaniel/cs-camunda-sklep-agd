@@ -1,0 +1,23 @@
+{
+  "components": [
+    {
+      "label": "Zapłać",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_0fruf8y",
+        "columns": null
+      },
+      "id": "Field_1naniss"
+    }
+  ],
+  "type": "default",
+  "id": "Form_zaplac",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}
