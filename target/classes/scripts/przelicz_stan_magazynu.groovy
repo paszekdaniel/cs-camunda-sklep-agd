@@ -1,7 +1,6 @@
 stan = execution.getVariable('stanMagazyn')
 
 zakupy = execution.getVariable('zakupy')
-execution.setVariable('pakujZakupy', zakupy)
 res = []
 
 stan.each { key, value ->
@@ -17,3 +16,5 @@ zakupy.each { k, v ->
 
 execution.setVariable('currProduct', products[0]['product'])
 execution.setVariable('currCount', products[0]['count'])
+
+execution.setVariable('pozostaleZakupy', products)

@@ -1,0 +1,23 @@
+{
+  "components": [
+    {
+      "label": "Odbieram ze sklepu",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_038y13f",
+        "columns": null
+      },
+      "id": "Field_0q0g47n"
+    }
+  ],
+  "type": "default",
+  "id": "Form_odbior",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

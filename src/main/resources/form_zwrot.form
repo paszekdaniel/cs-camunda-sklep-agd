@@ -1,0 +1,23 @@
+{
+  "components": [
+    {
+      "label": "Zwróć pieniądze",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1kj866a",
+        "columns": null
+      },
+      "id": "Field_04n64co"
+    }
+  ],
+  "type": "default",
+  "id": "Form_zwrot",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

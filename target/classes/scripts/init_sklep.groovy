@@ -7,10 +7,10 @@ stan['Krakow'] = [:]
 
 stanMagazyn = [:]
 
-stan['Poznan']['pralka'] = random.nextInt(3) +1
-stan['Poznan']['lodowka'] = random.nextInt(3)
-stan['Poznan']['ekspress'] = random.nextInt(3)
-stan['Poznan']['zmywarka'] = random.nextInt(3)
+stan['Poznan']['pralka'] = random.nextInt(3) + 1
+stan['Poznan']['lodowka'] = random.nextInt(3) + 1
+stan['Poznan']['ekspress'] = random.nextInt(3) + 1
+stan['Poznan']['zmywarka'] = random.nextInt(3) + 1
 
 stan['Warszawa']['pralka'] = random.nextInt(3)
 stan['Warszawa']['lodowka'] = random.nextInt(3)
@@ -33,13 +33,10 @@ execution.setVariable('stanMagazyn', stanMagazyn)
 
 zakupy = execution.getVariable('dynamiclist_zakup')
 zakupyRes = [:]
-zakupyRes['pralka'] = 0
-zakupyRes['lodowka'] = 0
-zakupyRes['zmywarka'] = 0
-zakupyRes['ekspress'] = 0
 
 for (value in zakupy.elements()) {
-    zakupyRes[value.prop('select_product').stringValue()] += 1
+    x = zakupyRes.getOrDefault(value.prop('select_product').stringValue(), 0);
+    zakupyRes[value.prop('select_product').stringValue()] = x + 1;
 }
 execution.setVariable('zakupy', zakupyRes)
 

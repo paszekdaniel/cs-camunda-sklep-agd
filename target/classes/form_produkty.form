@@ -46,7 +46,7 @@
       "properties": {}
     },
     {
-      "label": "Button",
+      "label": "Zatwierdź",
       "action": "submit",
       "type": "button",
       "layout": {

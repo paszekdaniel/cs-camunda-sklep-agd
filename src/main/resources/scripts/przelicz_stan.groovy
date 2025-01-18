@@ -20,5 +20,4 @@ zakupy.each { k, v ->
 execution.setVariable('currProduct', products[0]['product'])
 execution.setVariable('currCount', products[0]['count'])
 
-products.remove(0)
 execution.setVariable('pozostaleZakupy', products)
