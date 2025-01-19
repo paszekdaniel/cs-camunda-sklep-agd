@@ -102,7 +102,7 @@
       </bpmn:scriptTask>
       <bpmn:sequenceFlow id="Flow_0zjxwaw" sourceRef="Event_0v92jse" targetRef="Activity_10ugwoa" />
       <bpmn:sequenceFlow id="Flow_0f55730" sourceRef="Activity_10ugwoa" targetRef="Activity_03dehgg" />
-      <bpmn:scriptTask id="Activity_0xalh97" name="przelicz produkty" scriptFormat="groovy" camunda:resource="scripts/przelicz_po_spakowaniu.groovy">
+      <bpmn:scriptTask id="Activity_0xalh97" name="przelicz produkty w magazynie" scriptFormat="groovy" camunda:resource="scripts/przelicz_po_spakowaniu_magazyn.groovy">
         <bpmn:incoming>Flow_0wy1hae</bpmn:incoming>
         <bpmn:outgoing>Flow_0xkdcpj</bpmn:outgoing>
       </bpmn:scriptTask>
@@ -243,7 +243,7 @@
       <bpmn:outgoing>Flow_1pixp7i</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_0yp63zb" messageRef="Message_2ujf5pc" />
     </bpmn:intermediateThrowEvent>
-    <bpmn:userTask id="Activity_165fokx" name="Anulowanie zamówienia i zwrot pieniędzy" camunda:formRef="Form_zwrot" camunda:formRefBinding="latest">
+    <bpmn:userTask id="Activity_165fokx" name="Anulowanie zamówienia i zwrot pieniędzy" camunda:formRef="Form_zwrot" camunda:formRefBinding="latest" camunda:assignee="pracownik_sklepu">
       <bpmn:incoming>Flow_1mrlme4</bpmn:incoming>
       <bpmn:incoming>Flow_1te2gbg</bpmn:incoming>
       <bpmn:outgoing>Flow_1mxe0we</bpmn:outgoing>
@@ -339,12 +339,6 @@
       <bpmndi:BPMNShape id="Event_0zx1yg4_di" bpmnElement="Event_0zx1yg4">
         <dc:Bounds x="1632" y="112" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1a5utj3_di" bpmnElement="Activity_165fokx">
-        <dc:Bounds x="980" y="360" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1bboqs6_di" bpmnElement="Event_161vg7b">
-        <dc:Bounds x="1312" y="222" width="36" height="36" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_1454hf1" bpmnElement="Activity_04pnfci">
         <dc:Bounds x="800" y="850" width="100" height="80" />
         <bpmndi:BPMNLabel />
@@ -393,9 +387,18 @@
           <dc:Bounds x="1296" y="645" width="69" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1a5utj3_di" bpmnElement="Activity_165fokx">
+        <dc:Bounds x="980" y="360" width="100" height="80" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_025suo5_di" bpmnElement="Activity_0rc873f" isExpanded="false">
         <dc:Bounds x="1520" y="580" width="100" height="80" />
         <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1bboqs6_di" bpmnElement="Event_161vg7b">
+        <dc:Bounds x="1312" y="222" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1qnbxdp_di" bpmnElement="Event_0ucooy6">
+        <dc:Bounds x="1522" y="642" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0ffrr3i_di" bpmnElement="Event_068peqv">
         <dc:Bounds x="1452" y="152" width="36" height="36" />
@@ -408,9 +411,6 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1f6xekc_di" bpmnElement="Event_07leuv4">
         <dc:Bounds x="802" y="912" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1qnbxdp_di" bpmnElement="Event_0ucooy6">
-        <dc:Bounds x="1522" y="642" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0wbzrpd_di" bpmnElement="Flow_0wbzrpd">
         <di:waypoint x="780" y="405" />

@@ -30,25 +30,13 @@
       "key": "radio_produkt"
     },
     {
-      "type": "table",
+      "text": "### Oczekiwana ilość produktu w magazynie: {{stanProductCount}}",
+      "type": "text",
       "layout": {
-        "row": "Row_0xw4aw4",
+        "row": "Row_0cuvakd",
         "columns": null
       },
-      "label": "Stan",
-      "rowCount": 10,
-      "columns": [
-        {
-          "key": "product",
-          "label": "produkt"
-        },
-        {
-          "key": "count",
-          "label": "Ilość"
-        }
-      ],
-      "id": "Field_0nozddb",
-      "dataSource": "=stanTable"
+      "id": "Field_0cz4vqr"
     }
   ],
   "type": "default",

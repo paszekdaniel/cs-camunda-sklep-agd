@@ -9,18 +9,18 @@ stanMagazyn = [:]
 
 stan['Poznan']['pralka'] = random.nextInt(3) + 1
 stan['Poznan']['lodowka'] = random.nextInt(3) + 1
-stan['Poznan']['ekspress'] = random.nextInt(3) + 1
+stan['Poznan']['ekspress'] = 0
 stan['Poznan']['zmywarka'] = random.nextInt(3) + 1
 
-stan['Warszawa']['pralka'] = random.nextInt(3)
-stan['Warszawa']['lodowka'] = random.nextInt(3)
-stan['Warszawa']['ekspress'] = random.nextInt(3)
-stan['Warszawa']['zmywarka'] = random.nextInt(3)
+stan['Warszawa']['pralka'] = random.nextInt(3) + 1
+stan['Warszawa']['lodowka'] = random.nextInt(3) + 1
+stan['Warszawa']['ekspress'] = 0
+stan['Warszawa']['zmywarka'] = random.nextInt(3) + 1
 
-stan['Krakow']['pralka'] = random.nextInt(3)
-stan['Krakow']['lodowka'] = random.nextInt(3)
-stan['Krakow']['ekspress'] = random.nextInt(3)
-stan['Krakow']['zmywarka'] = random.nextInt(3)
+stan['Krakow']['pralka'] = random.nextInt(3) + 1
+stan['Krakow']['lodowka'] = random.nextInt(3) + 1
+stan['Krakow']['ekspress'] = 0
+stan['Krakow']['zmywarka'] = random.nextInt(3) + 1
 
 stanMagazyn['pralka'] = random.nextInt(10) + 1
 stanMagazyn['lodowka'] = random.nextInt(10) + 1
