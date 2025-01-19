@@ -30,7 +30,7 @@
       "key": "radio_produkt"
     },
     {
-      "text": "### Oczekiwana ilość produktu w magazynie: {{stanProductCount}}",
+      "text": "### Oczekiwana dostępna ilość produktu: {{stanProductCount}}",
       "type": "text",
       "layout": {
         "row": "Row_0cuvakd",

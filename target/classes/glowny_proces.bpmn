@@ -75,7 +75,7 @@
         <bpmn:incoming>Flow_0jmnwh4</bpmn:incoming>
       </bpmn:endEvent>
       <bpmn:sequenceFlow id="Flow_0jmnwh4" name="Nie" sourceRef="Gateway_0kf4m1w" targetRef="Event_1j1dp1l" />
-      <bpmn:userTask id="Activity_03dehgg" name="Spakowanie produktu" camunda:formRef="Form_spakuj" camunda:formRefBinding="latest" camunda:assignee="pracownik_magazynu">
+      <bpmn:userTask id="Activity_03dehgg" name="Spakowanie produktu w magazynie" camunda:formRef="Form_spakuj" camunda:formRefBinding="latest" camunda:assignee="pracownik_magazynu">
         <bpmn:incoming>Flow_0wokaar</bpmn:incoming>
         <bpmn:incoming>Flow_0f55730</bpmn:incoming>
         <bpmn:outgoing>Flow_07pa6du</bpmn:outgoing>
@@ -188,7 +188,7 @@
       <bpmn:endEvent id="Event_0wvbh1p">
         <bpmn:incoming>Flow_0o8rmr7</bpmn:incoming>
       </bpmn:endEvent>
-      <bpmn:userTask id="Activity_1b2cd71" name="Spakowanie produktu" camunda:formRef="Form_spakuj" camunda:formRefBinding="latest" camunda:assignee="pracownik_sklepu">
+      <bpmn:userTask id="Activity_1b2cd71" name="Spakowanie produktu w sklepie" camunda:formRef="Form_spakuj" camunda:formRefBinding="latest" camunda:assignee="pracownik_sklepu">
         <bpmn:incoming>Flow_1hgt7lt</bpmn:incoming>
         <bpmn:incoming>Flow_0hg21lf</bpmn:incoming>
         <bpmn:outgoing>Flow_1l5pb3c</bpmn:outgoing>
@@ -556,6 +556,7 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_0m5nrf9" bpmnElement="Activity_1b2cd71">
         <dc:Bounds x="392" y="200" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_07synyl" bpmnElement="Event_1185ynn">
         <dc:Bounds x="544" y="84" width="36" height="36" />
@@ -638,6 +639,7 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1qn928c_di" bpmnElement="Activity_03dehgg">
         <dc:Bounds x="340" y="238" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_089hky4_di" bpmnElement="Event_0j32kor">
         <dc:Bounds x="472" y="122" width="36" height="36" />
